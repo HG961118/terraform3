@@ -1,4 +1,5 @@
 resource "aws_key_pair" "sdkim_key" {
     key_name = "sdkim1-key"
-    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCWNXPmliHMNdQQwzV2wzdbT15SSLduwTIrK+uyJrIu9QbDQh1I44mjJNAdlmsYWNUab+y8oibwjHMK0VNKc9pO7W7jvg23j5uDFyT86wGPtHZTdNFsUKSQDVEz+cV1KWagm140uJanF72vCJJpfCDAtUwkWRnLlR+bZ5IG0BgyPnbACmHfg63ljf67Y8mXNmmNpCTP7OflIlb07ptUx+CFMydz3sFSXiRc+/oBI69Zi50ZAGEYMNx7HmMx3tZUkfZb1BaROhDR+warH9/SkTvgJJaOYp6LmWgddTQ62Iyn7b4yNhbUwm1yTnBywVJwZANwfO5/9c/le5br0Yo2N99YKeW3rFtzMY0i7ar6qZwGlurvPvWBbp9V31W6kzMejL/w8azrgHPaqUyQbnHY7/nEbl7mvapb0+iIGH/gbrkWVg/EIKfJqKcD2Dj4t/WUZmn05AgR875z732yHb5n6IpkbGsuc/h4KBnNyB32vn7IUAUkcCYyuRFFhbIGyCh6l1M="
+    public_key = file("../../.ssh/hgkim-key.pub")
+   
 }
